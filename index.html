@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Removing the visible Gemini watermark</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:720px;margin:48px auto;padding:0 20px;color:#111}h1{font-size:28px}h2{font-size:19px;margin-top:28px}a{color:#0b5}li{margin:4px 0}</style>
+</head><body>
+<h1>Removing the visible Gemini watermark from an image you own</h1>
+<p><strong>Gemini Watermark Remover</strong> by Pixel Clean targets the visible star watermark that Gemini puts on exported images, and that Gemini and Veo put on videos.</p>
+<h2>It runs locally</h2>
+<p>Images and clips are decoded, processed and exported in the browser. The server never receives them, and there is no sign-in.</p>
+<h2>Images</h2>
+<ul>
+<li>The pipeline uses embedded watermark templates and reverse alpha blending rather than an image model, which is why it is quick and works at source dimensions.</li>
+<li>Drop a file, wait for the automatic match, compare with the original using the slider, then download a PNG or a ZIP.</li>
+<li>Free covers images up to 16 MP and exports up to 2048 pixels on the long edge, with no upscaling.</li>
+</ul>
+<h2>Video</h2>
+<ul>
+<li>The tool downloads a separate model, detects the visible mark frame by frame and re-encodes an MP4.</li>
+<li>MP4, WebM and MOV are accepted as containers, and the browser must support the codecs plus H.264 encoding.</li>
+<li>A compatible audio track is copied over; if the audio cannot be used, the output is silent with a visible notice rather than a silent failure.</li>
+</ul>
+<h2>Honest limits</h2>
+<ul>
+<li>A product name alone cannot guarantee a match, because exports change and cropping or resizing alters the template.</li>
+<li>The tool does not remove every logo and cannot reconstruct pixels the watermark replaced.</li>
+<li>It does not touch SynthID, the invisible provenance signal. Removing a visible star does not mean the file carries no AI provenance data.</li>
+<li>Uncertain results are labelled rather than presented as success.</li>
+</ul>
+<p><a href="https://geminiwatermark.xyz/">Gemini Watermark Remover</a></p>
+</body></html>
